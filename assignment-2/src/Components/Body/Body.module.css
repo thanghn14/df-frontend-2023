@@ -48,3 +48,10 @@
   opacity: 0.8;
   transition: 0.2s;
 }
+
+.pagination {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  cursor: pointer;
+}

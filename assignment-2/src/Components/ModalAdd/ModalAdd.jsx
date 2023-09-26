@@ -14,10 +14,10 @@ export const ModalAdd = ({
       <div id={styles.modalAdd}>
         <div id={styles.modalAddTop}>
           <p>Add book</p>
-          <GrFormClose onClick={() => setOpenModal(false)} />
+          <GrFormClose onClick={() => setOpenModal({modalAdd: false})} />
         </div>
         <div id={styles.modalAddInput}>
-          <label for="name-input" className={styles.addLabel}>
+          <label htmlFor="name-input" className={styles.addLabel}>
             Name
           </label>
           <input
@@ -27,7 +27,7 @@ export const ModalAdd = ({
             className={styles.addInput}
             onChange={(e) => setNameInput(e.target.value)}
           />
-          <label for="author-input" className={styles.addLabel}>
+          <label htmlFor="author-input" className={styles.addLabel}>
             Author
           </label>
           <input
@@ -37,7 +37,7 @@ export const ModalAdd = ({
             className={styles.addInput}
             onChange={(e) => setAuthorInput(e.target.value)}
           />
-          <label for="topic-input" className={styles.addLabel}>
+          <label htmlFor="topic-input" className={styles.addLabel}>
             Topic
           </label>
           <select
