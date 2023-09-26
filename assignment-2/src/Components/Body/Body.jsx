@@ -174,7 +174,7 @@ export const Body = () => {
     const dataSearch = localData.filter((data) => {
       return data.name.toUpperCase().includes(e.toUpperCase());
     });
-    setData(dataSearch);
+    setPagination(dataSearch.slice(0, perPage));
   };
 
   return (
