@@ -1,0 +1,35 @@
+#head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+  border-bottom: 0.1rem solid #ccc;
+}
+
+#user {
+  width: 9rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+#userAvatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-image: url("../../assets/imgs/rock-lotus.jpg");
+  background-size: cover;
+  background-position-x: center;
+}
+
+#userName {
+  float: right;
+  font-weight: 600;
+}
+
+#logo {
+  font-weight: 800;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
